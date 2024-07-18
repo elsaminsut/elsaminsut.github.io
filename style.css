@@ -96,6 +96,8 @@ p {
 }
 
 .left-column {
+  position: sticky;
+  top: 0;
   width: 220px;
   min-width: 220px;
   height: 100%;
