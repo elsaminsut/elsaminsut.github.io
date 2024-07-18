@@ -194,4 +194,8 @@ p {
   .content {
     flex-direction: column;
   }
+
+  .left-column {
+    position: relative;
+  }
 }
