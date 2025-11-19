@@ -21,202 +21,78 @@
     />
   </head>
 
-  <body class="fade-in">
-    <div class="content">
-      <div class="left-column">
-        <div class="left-column top">
-          <a class="title" href="index.html">
-            <h1>Elsa Minsut</h1>
-            <h2>Design Engineer & Computational Designer</h2>
+  <body class="fade-in bg-white font-sans text-sm leading-[135%] flex flex-col min-h-screen m-0">
+    <div class="flex flex-col flex-1 md:flex-row">
+
+      <!-- sidebar -->
+      <div class="sticky top-0 w-2xs min-2xs h-100vh p-10">
+        <div class="flex flex-col gap-8 p-0 justify-start">
+          
+          <!-- title -->
+          <a class="flex flex-col gap-1 hover:no-underline" href="index.html">
+            <h1 class="text-base m-0 font-semibold text-purple-500">Elsa Minsut</h1>
+            <h2 class="text-base m-0 font-light text-slate-500">Design Engineer<br>& Computational Designer</h2>
           </a>
-          <div class="nav">
-            <!-- <p class="grey">Featured works</p>
-            <a>DHL</a>
-            <a>Australia</a>
-            <a>Project 3</a>
-            <div class="spacer-16"></div>
-            <p class="grey">Services</p>
-            <a href="services.html">Solar analysis studies</a>
-            <a>BIPV planning</a>
-            <a>Technical drawings</a>
-            <div class="spacer-16"></div> -->
-            <a href="index.html"><strong>Résumé</strong></a>
-            <a href="mailto:hi@elsaminsut.com">Contact</a>
-            <a
-              class="flex-h gap-xs a-items-center"
-              href="https://www.linkedin.com/in/elsaminsut"
-              target="_blank"
-              >LinkedIn<i data-lucide="arrow-up-right"></i
-            ></a>
+
+          <!-- links -->
+          <div class="flex flex-col gap-2 h-full">
+            <a class="transition-all duration-400 text-slate-900 font-semibold ease-in-out hover:ml-1 hover:no-underline" href="index.html">Home</a>
+            <a class="transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline" href="services.html">Services</a>
+          </div>
+
+          <div class="flex flex-col gap-2 h-full">
+            <a class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1  hover:no-underline" href="resume.html">Résumé</a>
+            <a class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline" href="contact.html">Contact</a>
+          </div>
+
+          <!-- language switch -->
+          <div class="flex flex-row gap-2">
+            <a class="text-purple-500">EN</a>
+            <a class="text-purple-500">DE</a>
           </div>
         </div>
       </div>
-      <div class="right-column">
-        <div class="column-content">
-          <!-- <h3>Résumé</h3>
-          <div class="spacer-32"></div> -->
-          <div class="section-content" style="margin-top: 0px">
-            <h4>Work experience</h4>
-          </div>
 
-          <div class="section-content">
-            <p class="section-title">
-              Computational Engineer
-              <span class="section-title company">@ ML System S.A.</span>
-            </p>
-            <p class="section-subtitle">
-              Aug 2024 - Present, Berlin/Remote (DE)
-            </p>
-            <p class="section-paragraph">
-              Development of a digital toolbox consisting of algorithms,
-              templates and automations to speed up the quoting process.
-              Technical support to the sales team by conducting feasibility
-              studies for different solar facade projects.
-            </p>
+      <!-- content -->
+      <div class="w-full h-100vh p-10 flex flex-col items-center justify-center">
+        <div class="max-w-2xl">
+          <div class="w-full h-full my-5 flex flex-col gap-6" style="margin-top: 0px">
 
-            <p class="section-paragraph grey">
-              Tasks: Conducting solar analyses and building performance
-              simulations using Ladybug. Creating comprehensive project
-              presentations for sales requests.
-            </p>
-          </div>
-
-          <div class="section-content">
-            <p class="section-title">
-              Manager Digital Services & Products
-              <span class="section-title company"
-                >@ Grenzebach Envelon GmbH</span
-              >
-            </p>
-            <p class="section-subtitle">
-              Sep 2022 - Apr 2024, Berlin/Remote (DE)
-            </p>
-            <p class="section-paragraph">
-              Led the digital transition within the organization by introducing
-              computational design to assist customers and production of solar
-              active façades. Development of a digital toolbox for non-Rhino
-              users to create façade layouts, complete with BOM and production
-              drawings.
-            </p>
-
-            <p class="section-paragraph grey">
-              Tasks: Algorithm-based workflows to optimize and automate BIPV
-              planning. Solar analysis studies and simulations using Ladybug.
-              Production of 3D renderings and automation of technical drawings.
-            </p>
-          </div>
-          <div class="section-content">
-            <p class="section-title">
-              Digital Innovation Engineer
-              <span class="section-title company">@ AVANCIS GmbH</span>
-            </p>
-            <p class="section-subtitle">
-              Jul 2019 - Aug 2022, Berlin/Remote (DE)
-            </p>
-            <p class="section-paragraph">
-              Support customers through computational design in the field of
-              solar active façades. Development of a digital toolbox and digital
-              workflows for the Sales and Technical Consultancy departments.
-            </p>
-
-            <p class="section-paragraph grey">
-              Tasks: Project completion automation and optimization within
-              Grasshopper. Solar analysis studies and simulations using Ladybug.
-              BIPV planning. Production of 3D renderings and technical drawings.
-            </p>
-          </div>
-          <div class="section-content">
-            <p class="section-title">
-              Optimization Specialist
-              <span class="section-title company"
-                >@ Teuffel Engineering Consultants</span
-              >
-            </p>
-            <p class="section-subtitle">Feb 2019 - Jun 2019, Berlin (DE)</p>
-            <p class="section-paragraph">
-              Geometry processing and optimization for later structural analysis
-              on SCIA Engineer. Streamlining of workflows and report production.
-            </p>
-          </div>
-          <div class="section-content">
-            <p class="section-title">
-              Product and Computational Designer
-              <span class="section-title company"
-                >@ LIGAS Tichlerarbeiten GmbH</span
-              >
-            </p>
-            <p class="section-subtitle">Jun 2017 - Sep 2018, Berlin (DE)</p>
-            <p class="section-paragraph">
-              Furniture and timber products design with a DfM (design for
-              manufacturing) approach. Interaction and operation of 5-axis CNC
-              and laser cutting machines.
-            </p>
-          </div>
-
-          <div class="spacer-16"></div>
-
-          <div class="section-content">
-            <h4>Education</h4>
-          </div>
-
-          <div class="section-content">
-            <p class="section-title company">
-              Bachelor of Engineering (BE), Industrial and Product Design
-            </p>
-            <p class="section-subtitle">
-              2016, Technical University of Madrid / U. Politecnica de Madrid,
-              Madrid (ES)
-            </p>
-          </div>
-
-          <div class="section-content">
-            <p class="section-title company">Master in Parametric Design</p>
-            <p class="section-subtitle">2017, Controlmad, Madrid (ES)</p>
-          </div>
-
-          <div class="spacer-16"></div>
-
-          <div class="section-content">
-            <h4>Software skills</h4>
-          </div>
-          <div class="section-content">
-            <div class="pill-list">
-              <div class="pill">Rhino</div>
-              <div class="pill">Grasshopper</div>
-              <div class="pill">Ladybug/Honeybee</div>
-              <div class="pill">Revit</div>
-              <div class="pill">Autodesk Inventor</div>
-              <div class="pill">SolidWorks</div>
-              <div class="pill">Adobe Suite</div>
-              <div class="pill">MS Excel</div>
+            <div class="w-20 h-20 bg-purple-500">
+              <img src="images/elsa-minsut.jpg" alt="">
             </div>
-          </div>
+            <p class="text-2xl font-normal text-slate-900">
+              Hello! I'm Elsa, a Computational Designer and Engineer with over
+              10 years of professional experience.
+            </p>
+            <p class="text-lg font-light text-slate-600">
+              While I've worked for
+              companies across different engineering and construction fields,
+              my focus has been on optimizing processes in the CAD environment.
+              In recent years, I've specialized in sustainability and solar
+              active facades, conducting detailed environmental assessments and
+              feasibility studies. I can help customers evaluate their
+              buildings' potential for solar installations through
+              comprehensive analyses of energy performance, ROI calculations,
+              and solar benefit analyses to help maximize environmental and
+              financial returns.
+            </p>
 
-          <div class="spacer-16"></div>
+            <p class="text-lg font-light text-slate-400">
+              If you have a project in mind and would like to explore how we
+              could work together, <a href="contact.html">I'd love to hear from you!</a> Check out my
+              services page to learn more about how I can support your project.
+            </p>
 
-          <div class="section-content">
-            <h4>Languages</h4>
-          </div>
-          <div class="section-content">
-            <div class="pill-list">
-              <div class="pill">Spanish (Native)</div>
-              <div class="pill">English (Bilingual)</div>
-              <div class="pill">German (Professional)</div>
-            </div>
-          </div>
-
-          <div class="spacer-16"></div>
-
-          <div class="section-content">
-            <h4>Areas of interest</h4>
-          </div>
-          <div class="section-content">
-            <div class="pill-list">
-              <div class="pill">Renewable energies</div>
-              <div class="pill">Computational Design</div>
-              <div class="pill">Optimization & Automation</div>
-              <div class="pill">Digital fabrication</div>
-              <div class="pill">Programming</div>
+            <!-- actions -->
+            <div class="flex flex-row gap-2">
+              <a class="bg-white text-slate-800 border border-slate-200 px-4 py-2 rounded-full w-fit hover:bg-slate-50 hover:border-slate-300 hover:no-underline" href="services.html">Services</a>
+              <a class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300" href="https://www.linkedin.com/in/elsaminsut" target="_blank">
+                <image class="h-full w-full" src="images/icons/icon_linkedin.svg" alt=""></image>
+              </a>
+              <a class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300" href="https://github.com/elsaminsut" target="_blank">
+                <image class="h-full w-full" src="images/icons/icon_github.svg" alt=""></image>
+              </a> 
             </div>
           </div>
         </div>
