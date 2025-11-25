@@ -21,81 +21,567 @@
     />
   </head>
 
-  <body class="fade-in bg-white font-sans text-sm leading-[135%] flex flex-col min-h-screen m-0">
+  <body
+    class="fade-in bg-white font-sans text-sm leading-[135%] flex flex-col min-h-screen m-0"
+  >
     <div class="flex flex-col flex-1 md:flex-row">
-
       <!-- sidebar -->
-      <div class="sticky top-0 w-2xs min-2xs h-100vh p-10">
+      <div class="sticky top-0 self-start w-2xs min-2xs h-screen p-10">
         <div class="flex flex-col gap-8 p-0 justify-start">
-          
           <!-- title -->
           <a class="flex flex-col gap-1 hover:no-underline" href="index.html">
-            <h1 class="text-base m-0 font-semibold text-purple-500">Elsa Minsut</h1>
-            <h2 class="text-base m-0 font-light text-slate-500">Design Engineer<br>& Computational Designer</h2>
+            <h1 class="text-base m-0 font-semibold text-primary">
+              Elsa Minsut
+            </h1>
+            <h2 class="text-base m-0 font-light text-slate-500">
+              Design Engineer<br />& Computational Designer
+            </h2>
           </a>
 
           <!-- links -->
           <div class="flex flex-col gap-2 h-full">
-            <a class="transition-all duration-400 text-slate-900 font-semibold ease-in-out hover:ml-1 hover:no-underline" href="index.html">Home</a>
-            <a class="transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline" href="services.html">Services</a>
+            <a
+              class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
+              id="home-link"
+              >Home</a
+            >
+            <a
+              class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
+              id="work-link"
+              >Work</a
+            >
+            <a
+              class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
+              id="services-link"
+              >Services</a
+            >
+            <a
+              class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
+              id="resume-link"
+              >About</a
+            >
+            <a
+              class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
+              id="contact-link"
+              >Contact</a
+            >
           </div>
 
           <div class="flex flex-col gap-2 h-full">
-            <a class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1  hover:no-underline" href="resume.html">Résumé</a>
-            <a class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline" href="contact.html">Contact</a>
-          </div>
-
-          <!-- language switch -->
-          <div class="flex flex-row gap-2">
-            <a class="text-purple-500">EN</a>
-            <a class="text-purple-500">DE</a>
+            <p class="text-slate-400 italic font-normal w-full mb-1">
+              Projects
+            </p>
+            <a
+              class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline"
+              href="dhl.html"
+              >DHL</a
+            >
+            <a
+              class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline"
+              href="spencer-st.html"
+              >Spencer St</a
+            >
           </div>
         </div>
       </div>
 
-      <!-- content -->
-      <div class="w-full h-100vh p-10 flex flex-col items-center justify-center">
-        <div class="max-w-2xl">
-          <div class="w-full h-full my-5 flex flex-col gap-6" style="margin-top: 0px">
+      <!-- content area -->
+      <div class="flex flex-col flex-1">
+        <!-- welcome -->
+        <div
+          class="w-full h-screen p-10 flex flex-col items-center justify-center"
+          id="welcome-section"
+        >
+          <div class="max-w-2xl">
+            <div class="w-full h-full my-5 flex flex-row gap-10">
+              <div class="w-60 h-60">
+                <img
+                  class="w-full h-auto object-contain"
+                  src="images/elsa-minsut.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col gap-6 w-full">
+                <p class="text-2xl font-normal text-slate-900">
+                  Hello! I'm <span class="font-medium">Elsa</span>, a
+                  <span class="font-medium"
+                    >Computational Designer and Engineer</span
+                  >
+                  with over 10 years of professional experience.
+                </p>
+                <p class="text-lg font-light text-slate-600">
+                  While I've worked for companies across different engineering
+                  and construction fields, my focus has been on optimizing
+                  processes in the CAD environment. In recent years, I've
+                  specialized in sustainability and solar active facades,
+                  conducting detailed environmental assessments and feasibility
+                  studies. I can help customers evaluate their buildings'
+                  potential for solar installations through comprehensive
+                  analyses of energy performance, ROI calculations, and solar
+                  benefit analyses to help maximize environmental and financial
+                  returns.
+                </p>
 
-            <div class="w-20 h-20 bg-purple-500">
-              <img src="images/elsa-minsut.jpg" alt="">
-            </div>
-            <p class="text-2xl font-normal text-slate-900">
-              Hello! I'm Elsa, a Computational Designer and Engineer with over
-              10 years of professional experience.
-            </p>
-            <p class="text-lg font-light text-slate-600">
-              While I've worked for
-              companies across different engineering and construction fields,
-              my focus has been on optimizing processes in the CAD environment.
-              In recent years, I've specialized in sustainability and solar
-              active facades, conducting detailed environmental assessments and
-              feasibility studies. I can help customers evaluate their
-              buildings' potential for solar installations through
-              comprehensive analyses of energy performance, ROI calculations,
-              and solar benefit analyses to help maximize environmental and
-              financial returns.
-            </p>
+                <p class="text-lg font-light text-slate-400">
+                  If you have a project in mind and would like to explore how we
+                  could work together,
+                  <a href="contact.html">I'd love to hear from you!</a> Check
+                  out my services below to learn more about how I can support
+                  your project.
+                </p>
 
-            <p class="text-lg font-light text-slate-400">
-              If you have a project in mind and would like to explore how we
-              could work together, <a href="contact.html">I'd love to hear from you!</a> Check out my
-              services page to learn more about how I can support your project.
-            </p>
-
-            <!-- actions -->
-            <div class="flex flex-row gap-2">
-              <a class="bg-white text-slate-800 border border-slate-200 px-4 py-2 rounded-full w-fit hover:bg-slate-50 hover:border-slate-300 hover:no-underline" href="services.html">Services</a>
-              <a class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300" href="https://www.linkedin.com/in/elsaminsut" target="_blank">
-                <image class="h-full w-full" src="images/icons/icon_linkedin.svg" alt=""></image>
-              </a>
-              <a class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300" href="https://github.com/elsaminsut" target="_blank">
-                <image class="h-full w-full" src="images/icons/icon_github.svg" alt=""></image>
-              </a> 
+                <!-- actions -->
+                <div class="flex flex-row gap-2 mt-2">
+                  <a
+                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300"
+                    href="https://www.linkedin.com/in/elsaminsut"
+                    target="_blank"
+                  >
+                    <image
+                      class="h-full w-full"
+                      src="images/icons/icon_linkedin.svg"
+                      alt=""
+                    ></image>
+                  </a>
+                  <a
+                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300"
+                    href="https://github.com/elsaminsut"
+                    target="_blank"
+                  >
+                    <image
+                      class="h-full w-full"
+                      src="images/icons/icon_github.svg"
+                      alt=""
+                    ></image>
+                  </a>
+                  <a
+                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300"
+                    href="https://www.xing.com/profile/Elsa_Minsut"
+                    target="_blank"
+                  >
+                    <image
+                      class="h-full w-full"
+                      src="images/icons/icon_xing.svg"
+                      alt=""
+                    ></image>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="w-full h-40"></div>
+
+        <!-- work section -->
+
+        <div
+          id="work-section"
+          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+        >
+          <div class="flex flex-col gap-12 max-w-2xl w-full h-full">
+            <!-- title -->
+            <div class="flex flex-row items-center gap-4">
+              <h2 class="text-base font-normal text-slate-400 w-full">Work</h2>
+              <button
+                id="work-scroll-left"
+                class="work-nav-button"
+                aria-label="Scroll left"
+              >
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <button
+                id="work-scroll-right"
+                class="work-nav-button"
+                aria-label="Scroll right"
+              >
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- content -->
+            <div
+              class="work-scroll-container m-auto"
+              id="work-scroll-container"
+            >
+              <div class="work-scroll-wrapper">
+                <div class="flex flex-col gap-3">
+                  <a href="dhl.html" class="work-item">
+                    <img src="images/work/dhl_01.png" alt="DHL Project" />
+                  </a>
+                  <div
+                    class="flex flex-col gap-0 text-sm text-slate-400 font-light"
+                  >
+                    <p>DHL Campus</p>
+                    <p class="text-slate-400">Leipzig, DE / 2020</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <a href="spencer-st.html" class="work-item">
+                    <img
+                      src="images/work/spencerst_01.jpg"
+                      alt="Spencer St Project 1"
+                    />
+                  </a>
+                  <div
+                    class="flex flex-col gap-0 text-sm text-slate-400 font-light"
+                  >
+                    <p>Spencer St</p>
+                    <p class="text-slate-400">Melbourne, AU / 2021</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="work-item cursor-crosshair">
+                    <img src="images/work/ciie_01.png" alt="CIIE" />
+                  </div>
+                  <div
+                    class="flex flex-col gap-0 text-sm text-slate-400 font-light"
+                  >
+                    <p>CIIE</p>
+                    <p class="text-slate-400">Shanghai, CN / 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-40"></div>
+
+        <!-- services section -->
+        <div
+          id="services-section"
+          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+        >
+          <div class="flex flex-col gap-12 max-w-2xl">
+            <!-- title -->
+            <h2 class="text-base font-normal text-slate-400">Services</h2>
+
+            <p>
+              As part of my consulting business, there are different ways I can
+              help companies or individual customers. Although my focus has been
+              lately in the solar business, if you have any ideas related to the
+              automation of anything CAD-related, I’ll be happy to hear about
+              them.
+            </p>
+
+            <div class="w-full flex flex-row gap-10 w-full">
+              <div
+                class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
+              >
+                <img src="images/dhl_planning_01.png" alt="" />
+              </div>
+
+              <div
+                class="flex flex-col gap-2 sticky self-start"
+                style="top: 40px"
+              >
+                <h3
+                  class="text-base font-semibold text-slate-900 leading-tight"
+                >
+                  Planning services for facade installations
+                </h3>
+                <p class="text-sm font-light text-slate-600">
+                  Creation of optimized module layouts for solar building skins,
+                  finding the best choice based on cost-efficiency, energy
+                  yield, and visual appeal. The technical drawings can evolve
+                  with the project, supporting every phase from initial concept
+                  through detailed planning.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full flex flex-row gap-10 w-full">
+              <div
+                class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
+              >
+                <img src="images/radiationanalysis_before.png" alt="" />
+                <img src="images/radiationanalysis_after.png" alt="" />
+              </div>
+
+              <div
+                class="flex flex-col gap-2 sticky self-start"
+                style="top: 40px"
+              >
+                <h3
+                  class="text-base font-semibold text-slate-900 leading-tight"
+                >
+                  Planning services for facade installations
+                </h3>
+                <p class="text-sm font-light text-slate-600">
+                  Creation of optimized module layouts for solar building skins,
+                  finding the best choice based on cost-efficiency, energy
+                  yield, and visual appeal. The technical drawings can evolve
+                  with the project, supporting every phase from initial concept
+                  through detailed planning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-40"></div>
+
+        <!-- resume section -->
+        <div
+          id="resume-section"
+          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+        >
+          <div class="flex flex-col gap-12 max-w-2xl">
+            <!-- title -->
+            <h2 class="text-base font-normal text-slate-400">About me</h2>
+
+            <p class="text-lg text-slate-900 font-light w-full">
+              Hi! I like this and I like that!
+            </p>
+
+            <p class="text-slate-900 font-normal w-full">
+              Below you can read more about my experience in the last years and
+              find more details about different positions I worked at. For a
+              full list of my professional experience, you can check
+              <a href="https://www.linkedin.com/in/elsaminsut" target="_blank"
+                >my LinkedIn profile</a
+              >.
+            </p>
+
+            <!-- title -->
+            <h2 class="text-base font-normal text-slate-400">
+              Work experience
+            </h2>
+
+            <!-- current -->
+
+            <div class="w-full flex flex-row gap-4">
+              <span class="text-slate-400 font-light min-w-16">2025</span>
+              <div class="w-full">
+                <p class="w-full flex flex-row gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Computational Engineer Consultant</span
+                  >
+                  <span class="text-slate-600">(Freelancer)</span>
+                </p>
+                <p class="text-slate-600 mb-2">Berlin/Remote (DE)</p>
+                <p class="leading-5 mb-2 font-normal text-slate-900 font-light">
+                  Development of a digital toolbox consisting of algorithms,
+                  templates and automations to speed up the quoting process.
+                  Technical support to the sales team by conducting feasibility
+                  studies for different solar facade projects.
+                </p>
+
+                <p class="leading-5 font-normal text-slate-400 font-light">
+                  Tasks: Conducting solar analyses and building performance
+                  simulations using Ladybug. Creating comprehensive project
+                  presentations for sales requests.
+                </p>
+              </div>
+            </div>
+
+            <!-- previous -->
+
+            <div class="w-full flex flex-col gap-4">
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2024</span>
+                <span class="text-slate-900 font-semibold"
+                  >Computational Engineer</span
+                >
+                <span class="text-slate-600">at ML System S.A.</span>
+              </p>
+
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2022-24</span>
+                <span class="text-slate-900 font-semibold"
+                  >Manager Digital Services & Products</span
+                >
+                <span class="text-slate-600">at Grenzebach Envelon GmbH</span>
+              </p>
+
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2019-22</span>
+                <span class="text-slate-900 font-semibold"
+                  >Digital Innovation Engineer</span
+                >
+                <span class="text-slate-600">at AVANCIS GmbH</span>
+              </p>
+
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2019</span>
+                <span class="text-slate-900 font-semibold"
+                  >Optimization Specialist</span
+                >
+                <span class="text-slate-600"
+                  >at Teuffel Engineering Consultants</span
+                >
+              </p>
+            </div>
+
+            <!-- education -->
+
+            <h2 class="text-base font-normal text-slate-400">Education</h2>
+
+            <div class="w-full flex flex-col gap-4">
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2011–16</span>
+                <span class="text-slate-900 font-semibold"
+                  >Bachelor of Engineering (BE), Industrial and Product
+                  Design</span
+                >
+              </p>
+
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2017</span>
+                <span class="text-slate-900 font-semibold"
+                  >Master in Parametric Design</span
+                >
+              </p>
+            </div>
+
+            <!-- other -->
+
+            <div class="w-full flex flex-col gap-4">
+              <p class="w-full flex flex-row gap-4 font-normal">
+                <span class="text-slate-400 font-light w-16">2025</span>
+                <span class="text-slate-900 font-semibold"
+                  >Advanced Revit Training
+                </span>
+                <span class="text-slate-600">at WBS Training, Berlin (DE)</span>
+              </p>
+              <p class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light w-16">2019</span>
+                <span class="text-slate-900 font-semibold"
+                  >Daylight Performance and Optimization</span
+                >
+                <span class="text-slate-600"
+                  >at McNeel Europe, Barcelona (ES)</span
+                >
+              </p>
+              <p class="w-full flex flex-row gap-4 font-normal">
+                <span class="text-slate-400 font-light w-16">2017</span>
+                <span class="text-slate-900 font-semibold"
+                  >Mesh Morphologies, Robotic Crafting
+                </span>
+                <span class="text-slate-600"
+                  >at AA Visiting School Aarhus (DK)</span
+                >
+              </p>
+              <p class="w-full flex flex-row gap-4 font-normal">
+                <span class="text-slate-400 font-light w-16">2017</span>
+                <span class="text-slate-900 font-semibold"
+                  >Construction Bionics
+                </span>
+                <span class="text-slate-600">at TU Dresden (DE) </span>
+              </p>
+            </div>
+
+            <!-- skills -->
+
+            <h2 class="text-base font-normal text-slate-400">Skills</h2>
+
+            <div class="w-full flex flex-row gap-0">
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 rounded-full bg-slate-200 border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_rhino.png" alt="" />
+                </div>
+                <span class="tooltip">Rhino</span>
+              </div>
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 -ml-2 rounded-full bg-slate-200 border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_grasshopper.png" alt="" />
+                </div>
+                <span class="tooltip">Grasshopper</span>
+              </div>
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 -ml-2 rounded-full bg-slate-200 border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_ladybug.png" alt="" />
+                </div>
+                <span class="tooltip">Ladybug/Honeybee</span>
+              </div>
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 p-2 -ml-2 rounded-full bg-white border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_revit.png" alt="" />
+                </div>
+                <span class="tooltip">Revit</span>
+              </div>
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 p-2 -ml-2 rounded-full bg-white border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_excel.png" alt="" />
+                </div>
+                <span class="tooltip">Excel</span>
+              </div>
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 p-2 -ml-2 rounded-full bg-white border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_inventor.png" alt="" />
+                </div>
+                <span class="tooltip">Autodesk Inventor</span>
+              </div>
+              <div class="tooltip-container relative">
+                <div
+                  class="w-10 h-10 p-2 -ml-2 rounded-full bg-white border border-slate-200 overflow-hidden"
+                >
+                  <img src="images/icons/icon_solidworks.png" alt="" />
+                </div>
+                <span class="tooltip">SolidWorks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-40"></div>
+
+        <!-- contact section -->
+        <div
+          id="contact-section"
+          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+        >
+          <div class="flex flex-col gap-12 max-w-2xl w-full">
+            <!-- title -->
+            <h2 class="text-base font-normal text-slate-400">Contact</h2>
+
+            <div class="w-full">
+              <p class="text-slate-900 font-normal w-full">
+                If you want to get in touch, please send a message the following
+                email
+                <a href="mailto:hi@elsaminsut.com" class="text-primary"
+                  >hi@elsaminsut.com</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button
+      id="scroll-to-top"
+      class="scroll-to-top-btn"
+      aria-label="Scroll to top"
+    >
+      <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal" aria-hidden="true">
+      <div class="image-modal-overlay"></div>
+      <div class="image-modal-content">
+        <button
+          type="button"
+          class="image-modal-close"
+          aria-label="Close modal"
+        >
+          <i data-lucide="x"></i>
+        </button>
+        <img id="modal-image" src="" alt="" />
       </div>
     </div>
 

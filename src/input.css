@@ -141,3 +141,171 @@ a:hover {
     margin: auto 0px;
   }
 }
+
+/* Custom tooltip */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background-color: rgba(15, 23, 42, 0.6);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Work horizontal scroll */
+#work-section {
+  overflow-x: visible;
+  overflow-y: visible;
+  overflow: hidden;
+}
+
+#work-section > div {
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.work-scroll-container {
+  width: 100%;
+  overflow-x: visible;
+  overflow-y: hidden;
+  position: relative;
+  overflow: visible;
+}
+
+.work-scroll-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: max-content;
+  will-change: transform;
+  align-items: center;
+}
+
+.work-item {
+  position: relative;
+  flex-shrink: 0;
+  width: fit-content;
+  max-width: 480px;
+  max-height: calc(100vh - 300px);
+  overflow: hidden;
+  background-color: #f8f9fa;
+  transition: opacity 0.4s ease-in-out;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 300px);
+  display: block;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+}
+
+.work-item:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.work-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.9) 0%,
+    rgba(15, 23, 42, 0.7) 70%,
+    transparent 100%
+  );
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.work-item:hover .work-item-overlay {
+  opacity: 1;
+}
+
+.work-item-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.work-item-meta {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Reduce opacity of other items when hovering over one */
+.work-scroll-wrapper:has(.work-item:hover) .work-item:not(:hover) {
+  opacity: 0.4;
+}
+
+.work-nav-button {
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+}
+
+.work-nav-button:hover {
+  background-color: #f8f9fa;
+  border-color: #cbd5e1;
+}
+
+.work-nav-button:active {
+  transform: scale(0.95);
+}
+
+.work-nav-button .lucide {
+  width: 16px;
+  height: 16px;
+  color: #64748b;
+}
+
+.work-nav-button:hover .lucide {
+  color: #475569;
+}
+
+@media only screen and (max-width: 680px) {
+  .work-item {
+    width: 300px;
+  }
+
+  .work-scroll-wrapper {
+    gap: 1rem;
+  }
+}
