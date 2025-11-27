@@ -97,7 +97,7 @@
       <div class="flex flex-col flex-1">
         <!-- welcome -->
         <div
-          class="w-full h-screen pl-0 pr-1 sm:p-10 flex flex-col items-center justify-center"
+          class="w-full h-auto sm:h-screen pl-0 pr-1 sm:p-10 flex flex-col items-center justify-center"
           id="welcome-section"
         >
           <div class="max-w-2xl">
@@ -187,13 +187,13 @@
           </div>
         </div>
 
-        <div class="w-full h-40"></div>
+        <div class="w-full h-20 sm:h-40"></div>
 
         <!-- work section -->
 
         <div
           id="work-section"
-          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+          class="w-full h-auto sm:min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
         >
           <div class="flex flex-col gap-12 max-w-2xl w-full h-full">
             <!-- title -->
@@ -310,12 +310,12 @@
           </div>
         </div>
 
-        <div class="w-full h-0 sm:h-40"></div>
+        <div class="w-full h-20 sm:h-40"></div>
 
         <!-- services section -->
         <div
           id="services-section"
-          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+          class="w-full h-auto sm:min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
         >
           <div class="flex flex-col gap-12 max-w-2xl">
             <!-- title -->
@@ -331,7 +331,7 @@
 
             <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
-                class="flex flex-col gap-2 sticky self-start"
+                class="flex flex-col gap-2 static sm:sticky self-start"
                 style="top: 40px"
               >
                 <i
@@ -361,7 +361,7 @@
 
             <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
-                class="flex flex-col gap-2 sticky self-start"
+                class="flex flex-col gap-2 static sm:sticky self-start"
                 style="top: 40px"
               >
                 <i data-lucide="sun" style="color: var(--primary-main)"></i>
@@ -390,7 +390,7 @@
 
             <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
-                class="flex flex-col gap-2 sticky self-start"
+                class="flex flex-col gap-2 static sm:sticky self-start"
                 style="top: 40px"
               >
                 <i
@@ -421,7 +421,7 @@
 
             <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
-                class="flex flex-col gap-2 sticky self-start"
+                class="flex flex-col gap-2 static sm:sticky self-start"
                 style="top: 40px"
               >
                 <i data-lucide="wrench" style="color: var(--primary-main)"></i>
@@ -454,7 +454,7 @@
         <!-- resume section -->
         <div
           id="resume-section"
-          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+          class="w-full h-auto sm:min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
         >
           <div class="flex flex-col gap-12 max-w-2xl">
             <!-- title -->
@@ -696,12 +696,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full h-0 sm:h-40"></div>
+        <div class="w-full h-20 sm:h-40"></div>
 
         <!-- contact section -->
         <div
           id="contact-section"
-          class="w-full min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
+          class="w-full h-auto sm:min-h-screen p-10 flex flex-col items-center justify-start parallax-section"
         >
           <div class="flex flex-col gap-12 max-w-2xl w-full">
             <!-- title -->
@@ -729,21 +729,6 @@
     >
       <i data-lucide="arrow-up"></i>
     </button>
-
-    <!-- Image Modal -->
-    <div id="image-modal" class="image-modal" aria-hidden="true">
-      <div class="image-modal-overlay"></div>
-      <div class="image-modal-content">
-        <button
-          type="button"
-          class="image-modal-close"
-          aria-label="Close modal"
-        >
-          <i data-lucide="x"></i>
-        </button>
-        <img id="modal-image" src="" alt="" />
-      </div>
-    </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>

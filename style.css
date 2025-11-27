@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.static {
+  position: static;
+}
+
 .relative {
   position: relative;
 }
@@ -604,8 +608,16 @@ video {
   margin-top: 10rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mt-80 {
+  margin-top: 20rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -622,6 +634,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-40 {
@@ -655,10 +671,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .max-h-10 {
@@ -1307,6 +1319,73 @@ a:hover {
   }
 }
 
+/* Navigation active indicator */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-main);
+  display: block;
+}
+
+/* Scroll to top button */
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-main);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top-btn:active {
+  transform: translateY(0);
+}
+
+.scroll-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top-btn .lucide {
+  width: 20px;
+  height: 20px;
+  color: white;
+  stroke-width: 2.5px;
+}
+
 .hover\:ml-1:hover {
   margin-left: 0.25rem;
 }
@@ -1326,32 +1405,40 @@ a:hover {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-0 {
-    margin-top: 0px;
+  .sm\:sticky {
+    position: sticky;
   }
 
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
 
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:h-40 {
     height: 10rem;
+  }
+
+  .sm\:h-screen {
+    height: 100vh;
+  }
+
+  .sm\:min-h-screen {
+    min-height: 100vh;
   }
 
   .sm\:flex-row {
     flex-direction: row;
   }
 
-  .sm\:gap-10 {
-    gap: 2.5rem;
-  }
-
   .sm\:gap-1 {
     gap: 0.25rem;
   }
 
-  .sm\:gap-4 {
-    gap: 1rem;
+  .sm\:gap-10 {
+    gap: 2.5rem;
   }
 
   .sm\:p-10 {
