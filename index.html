@@ -27,7 +27,7 @@
     <div class="flex flex-col flex-1 md:flex-row">
       <!-- sidebar -->
       <div class="sticky top-0 self-start w-2xs min-2xs h-screen p-10">
-        <div class="flex flex-col gap-8 p-0 justify-start">
+        <div class="flex flex-col gap-8 p-0 justify-start h-full">
           <!-- title -->
           <a class="flex flex-col gap-1 hover:no-underline" href="index.html">
             <h1 class="text-base m-0 font-semibold text-primary">
@@ -48,7 +48,7 @@
             <a
               class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
               id="work-link"
-              >Work</a
+              >Selected Works</a
             >
             <a
               class="nav-link transition-all duration-400 text-slate-900 ease-in-out hover:ml-1 hover:no-underline cursor-pointer"
@@ -67,20 +67,26 @@
             >
           </div>
 
-          <div class="flex flex-col gap-2 h-full">
-            <p class="text-slate-400 italic font-normal w-full mb-1">
-              Projects
-            </p>
+          <!-- <div class="flex flex-col gap-2 h-full">
             <a
               class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline"
               href="dhl.html"
-              >DHL</a
+              >Projects</a
+            >
+            <a
+              class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline"
+              href="dhl.html"
+              >→ DHL</a
             >
             <a
               class="transition-all text-slate-900 duration-400 ease-in-out hover:ml-1 hover:no-underline"
               href="spencer-st.html"
-              >Spencer St</a
+              >→ Spencer St</a
             >
+          </div> -->
+          <div class="flex flex-1 h-full"></div>
+          <div class="flex flex-col gap-2 h-fit">
+            <p class="text-slate-300 font-light">2026</p>
           </div>
         </div>
       </div>
@@ -101,7 +107,7 @@
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-6 w-full">
+              <div class="flex flex-col gap-5 w-full">
                 <p class="text-2xl font-normal text-slate-900">
                   Hello! I'm <span class="font-medium">Elsa</span>, a
                   <span class="font-medium"
@@ -110,24 +116,30 @@
                   with over 10 years of professional experience.
                 </p>
                 <p class="text-lg font-light text-slate-600">
-                  While I've worked for companies across different engineering
-                  and construction fields, my focus has been on optimizing
-                  processes in the CAD environment. In recent years, I've
-                  specialized in sustainability and solar active facades,
-                  conducting detailed environmental assessments and feasibility
-                  studies. I can help customers evaluate their buildings'
-                  potential for solar installations through comprehensive
-                  analyses of energy performance, ROI calculations, and solar
-                  benefit analyses to help maximize environmental and financial
-                  returns.
+                  Having worked across several fields of engineering (solar
+                  architecture or structural engineering to name a few), I can
+                  bring a multidisciplinary perspective and a strong
+                  understanding of how digital tools can optimize
+                  design-to-production processes.
+                </p>
+                <p class="text-lg font-light text-slate-600">
+                  My passion has always been to create tools and workflows that
+                  <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                    >remove repetitive work</span
+                  >
+                  and free up time for the more creative and complex
+                  <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                    >engineering challenges</span
+                  >.
                 </p>
 
                 <p class="text-lg font-light text-slate-400">
-                  If you have a project in mind and would like to explore how we
+                  Based in Berlin, I'm open to international collaboration. If
+                  you have a project in mind and would like to explore how we
                   could work together,
-                  <a href="contact.html">I'd love to hear from you!</a> Check
-                  out my services below to learn more about how I can support
-                  your project.
+                  <a href="#contact-section">I'd love to hear from you!</a>
+                  Check out the services section to learn more about how I can
+                  support your project.
                 </p>
 
                 <!-- actions -->
@@ -182,7 +194,9 @@
           <div class="flex flex-col gap-12 max-w-2xl w-full h-full">
             <!-- title -->
             <div class="flex flex-row items-center gap-4">
-              <h2 class="text-base font-normal text-slate-400 w-full">Work</h2>
+              <h2 class="text-base font-normal text-slate-400 w-full">
+                Selected works
+              </h2>
               <button
                 id="work-scroll-left"
                 class="work-nav-button"
@@ -206,39 +220,85 @@
             >
               <div class="work-scroll-wrapper">
                 <div class="flex flex-col gap-3">
-                  <a href="dhl.html" class="work-item">
+                  <div class="work-item">
                     <img src="images/work/dhl_01.png" alt="DHL Project" />
-                  </a>
+                  </div>
                   <div
-                    class="flex flex-col gap-0 text-sm text-slate-400 font-light"
+                    class="flex flex-col gap-1 text-sm text-slate-400 font-light"
                   >
-                    <p>DHL Campus</p>
-                    <p class="text-slate-400">Leipzig, DE / 2020</p>
+                    <p><strong>DHL Campus</strong> (Leipzig, DE)</p>
+                    <p class="text-slate-400">
+                      © AVANCIS / elektroBAU Dresden GmbH
+                    </p>
                   </div>
                 </div>
                 <div class="flex flex-col gap-3">
-                  <a href="spencer-st.html" class="work-item">
+                  <div class="work-item">
                     <img
                       src="images/work/spencerst_01.jpg"
                       alt="Spencer St Project 1"
                     />
-                  </a>
+                  </div>
                   <div
-                    class="flex flex-col gap-0 text-sm text-slate-400 font-light"
+                    class="flex flex-col gap-1 text-sm text-slate-400 font-light"
                   >
-                    <p>Spencer St</p>
-                    <p class="text-slate-400">Melbourne, AU / 2021</p>
+                    <p><strong>550 Spencer St</strong> (Melbourne, AU)</p>
+                    <p class="text-slate-400">© Kennon</p>
                   </div>
                 </div>
                 <div class="flex flex-col gap-3">
-                  <div class="work-item cursor-crosshair">
+                  <div class="work-item">
+                    <img
+                      src="images/work/sarakulturhus_01.png"
+                      alt="Sara Kulturhus Center"
+                    />
+                  </div>
+                  <div
+                    class="flex flex-col gap-1 text-sm text-slate-400 font-light"
+                  >
+                    <p>
+                      <strong>Sara Kulturhus Center</strong> (Skelleftea, SE)
+                    </p>
+                    <p class="text-slate-400">© AVANCIS / Jonas Westling</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="work-item">
+                    <img
+                      src="images/work/gronau_01.png"
+                      alt="Sporthalle Gronau"
+                    />
+                  </div>
+                  <div
+                    class="flex flex-col gap-1 text-sm text-slate-400 font-light"
+                  >
+                    <p><strong>Sporthalle Gronau</strong> (Gronau, DE)</p>
+                    <p class="text-slate-400">© AVANCIS / Olaf Rohl</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="work-item">
+                    <img
+                      src="images/work/voss_01.png"
+                      alt="Westspitze Tübingen"
+                    />
+                  </div>
+                  <div
+                    class="flex flex-col gap-1 text-sm text-slate-400 font-light"
+                  >
+                    <p><strong>Westspitze Tübingen</strong> (Tübingen, DE)</p>
+                    <p class="text-slate-400">© AVANCIS / Albrecht Voss</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="work-item">
                     <img src="images/work/ciie_01.png" alt="CIIE" />
                   </div>
                   <div
                     class="flex flex-col gap-0 text-sm text-slate-400 font-light"
                   >
-                    <p>CIIE</p>
-                    <p class="text-slate-400">Shanghai, CN / 2019</p>
+                    <p><strong>CIIE Expo 2019</strong> (Shanghai, CN)</p>
+                    <p class="text-slate-400">© AVANCIS</p>
                   </div>
                 </div>
               </div>
@@ -267,54 +327,119 @@
 
             <div class="w-full flex flex-row gap-10 w-full">
               <div
-                class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
-              >
-                <img src="images/dhl_planning_01.png" alt="" />
-              </div>
-
-              <div
                 class="flex flex-col gap-2 sticky self-start"
                 style="top: 40px"
               >
+                <i
+                  data-lucide="drafting-compass"
+                  style="color: var(--primary-main)"
+                ></i>
                 <h3
                   class="text-base font-semibold text-slate-900 leading-tight"
                 >
-                  Planning services for facade installations
+                  Planning services
                 </h3>
                 <p class="text-sm font-light text-slate-600">
-                  Creation of optimized module layouts for solar building skins,
-                  finding the best choice based on cost-efficiency, energy
-                  yield, and visual appeal. The technical drawings can evolve
-                  with the project, supporting every phase from initial concept
-                  through detailed planning.
+                  Creation of optimized
+                  <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                    >module layouts</span
+                  >
+                  for solar building skins, finding the best choice based on
+                  cost-efficiency, energy yield, and visual appeal.
                 </p>
+              </div>
+              <div
+                class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
+              >
+                <img src="images/services_01.png" alt="" />
               </div>
             </div>
 
             <div class="w-full flex flex-row gap-10 w-full">
               <div
+                class="flex flex-col gap-2 sticky self-start"
+                style="top: 40px"
+              >
+                <i data-lucide="sun" style="color: var(--primary-main)"></i>
+
+                <h3
+                  class="text-base font-semibold text-slate-900 leading-tight"
+                >
+                  Solar potential analyses
+                </h3>
+                <p class="text-sm font-light text-slate-600">
+                  Full analysis of
+                  <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                    >building performance</span
+                  >
+                  based on its location and orientation. The results show
+                  optimal areas for a PV installation, accounting for any
+                  shading effects due to neighboring buildings.
+                </p>
+              </div>
+              <div
                 class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
               >
-                <img src="images/radiationanalysis_before.png" alt="" />
-                <img src="images/radiationanalysis_after.png" alt="" />
+                <img src="images/services_02.png" alt="" />
               </div>
+            </div>
 
+            <div class="w-full flex flex-row gap-10 w-full">
               <div
                 class="flex flex-col gap-2 sticky self-start"
                 style="top: 40px"
               >
+                <i
+                  data-lucide="solar-panel"
+                  style="color: var(--primary-main)"
+                ></i>
                 <h3
                   class="text-base font-semibold text-slate-900 leading-tight"
                 >
-                  Planning services for facade installations
+                  Feasibility studies
                 </h3>
                 <p class="text-sm font-light text-slate-600">
-                  Creation of optimized module layouts for solar building skins,
-                  finding the best choice based on cost-efficiency, energy
-                  yield, and visual appeal. The technical drawings can evolve
-                  with the project, supporting every phase from initial concept
-                  through detailed planning.
+                  A comprehensive
+                  <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                    >building analysis</span
+                  >
+                  that evaluates each facade's potential for a PV installation.
+                  The study delivers key metrics including energy generation
+                  performance and ROI to determine suitable facade locations.
                 </p>
+              </div>
+              <div
+                class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
+              >
+                <img src="images/services_03.png" alt="" />
+              </div>
+            </div>
+
+            <div class="w-full flex flex-row gap-10 w-full">
+              <div
+                class="flex flex-col gap-2 sticky self-start"
+                style="top: 40px"
+              >
+                <i data-lucide="wrench" style="color: var(--primary-main)"></i>
+                <h3
+                  class="text-base font-semibold text-slate-900 leading-tight"
+                >
+                  Automated tools
+                </h3>
+                <p class="text-sm font-light text-slate-600">
+                  Automatic creation of
+                  <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                    >technical drawings</span
+                  >
+                  that comply with datasheets and manufacturing requirements,
+                  including plans for large installations with thousands of
+                  accurate module drawings produced at once.
+                </p>
+              </div>
+              <div
+                class="image-container relative w-full outline outline-1 outline-slate-200 overflow-hidden min-w-[60%]"
+              >
+                <img src="images/services_04.png" alt="" />
               </div>
             </div>
           </div>
@@ -331,18 +456,37 @@
             <!-- title -->
             <h2 class="text-base font-normal text-slate-400">About me</h2>
 
-            <p class="text-lg text-slate-900 font-light w-full">
-              Hi! I like this and I like that!
-            </p>
+            <div
+              class="flex flex-col gap-4 text-base text-slate-900 font-light"
+            >
+              <p class="w-full">
+                My background in
+                <span class="bg-slate-100 px-1 rounded-sm font-medium"
+                  >Industrial Design Engineering</span
+                >
+                has allowed to me work across several and very different fields,
+                from museum design to solar module manufacturing. From the
+                creative challenges of design projects to the more structural
+                and methodical engineering solutions, I can apply this
+                multidisciplinary approach to any given problem.
+              </p>
 
-            <p class="text-slate-900 font-normal w-full">
-              Below you can read more about my experience in the last years and
-              find more details about different positions I worked at. For a
-              full list of my professional experience, you can check
-              <a href="https://www.linkedin.com/in/elsaminsut" target="_blank"
-                >my LinkedIn profile</a
-              >.
-            </p>
+              <p class="w-full">
+                In my free time, I enjoy architectural photography, DIY crafts
+                and learning
+                <a href="https://github.com/ironcalc/IronCalc" target="_blank"
+                  >how to code</a
+                >.
+              </p>
+
+              <p class="w-full">
+                Below you can read more about my experience in the last years.
+                For a full list of my professional experience, you can check
+                <a href="https://www.linkedin.com/in/elsaminsut" target="_blank"
+                  >my LinkedIn profile</a
+                >.
+              </p>
+            </div>
 
             <!-- title -->
             <h2 class="text-base font-normal text-slate-400">
@@ -366,12 +510,6 @@
                   templates and automations to speed up the quoting process.
                   Technical support to the sales team by conducting feasibility
                   studies for different solar facade projects.
-                </p>
-
-                <p class="leading-5 font-normal text-slate-400 font-light">
-                  Tasks: Conducting solar analyses and building performance
-                  simulations using Ladybug. Creating comprehensive project
-                  presentations for sales requests.
                 </p>
               </div>
             </div>
