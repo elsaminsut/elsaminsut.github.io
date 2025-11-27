@@ -26,7 +26,9 @@
   >
     <div class="flex flex-col flex-1 md:flex-row">
       <!-- sidebar -->
-      <div class="sticky top-0 self-start w-2xs min-2xs h-screen p-10">
+      <div
+        class="hidden md:block sticky top-0 self-start w-2xs min-2xs h-screen p-10 z-1000"
+      >
         <div class="flex flex-col gap-8 p-0 justify-start h-full">
           <!-- title -->
           <a class="flex flex-col gap-1 hover:no-underline" href="index.html">
@@ -95,11 +97,13 @@
       <div class="flex flex-col flex-1">
         <!-- welcome -->
         <div
-          class="w-full h-screen p-10 flex flex-col items-center justify-center"
+          class="w-full h-screen pl-0 pr-1 sm:p-10 flex flex-col items-center justify-center"
           id="welcome-section"
         >
           <div class="max-w-2xl">
-            <div class="w-full h-full my-5 flex flex-row gap-10">
+            <div
+              class="w-full h-full my-5 flex flex-row gap-6 sm:gap-10 mt-40 sm:mt-0"
+            >
               <div class="w-60 h-60">
                 <img
                   class="w-full h-auto object-contain"
@@ -145,7 +149,7 @@
                 <!-- actions -->
                 <div class="flex flex-row gap-2 mt-2">
                   <a
-                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300"
+                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 max-w-10 hover:bg-slate-50 hover:border-slate-300"
                     href="https://www.linkedin.com/in/elsaminsut"
                     target="_blank"
                   >
@@ -156,7 +160,7 @@
                     ></image>
                   </a>
                   <a
-                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300"
+                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 max-w-10 hover:bg-slate-50 hover:border-slate-300"
                     href="https://github.com/elsaminsut"
                     target="_blank"
                   >
@@ -167,7 +171,7 @@
                     ></image>
                   </a>
                   <a
-                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 hover:bg-slate-50 hover:border-slate-300"
+                    class="bg-white text-slate-800 border border-slate-200 px-2 py-2 rounded-full w-fit max-h-10 max-w-10 hover:bg-slate-50 hover:border-slate-300"
                     href="https://www.xing.com/profile/Elsa_Minsut"
                     target="_blank"
                   >
@@ -306,7 +310,7 @@
           </div>
         </div>
 
-        <div class="w-full h-40"></div>
+        <div class="w-full h-0 sm:h-40"></div>
 
         <!-- services section -->
         <div
@@ -325,7 +329,7 @@
               them.
             </p>
 
-            <div class="w-full flex flex-row gap-10 w-full">
+            <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
                 class="flex flex-col gap-2 sticky self-start"
                 style="top: 40px"
@@ -355,7 +359,7 @@
               </div>
             </div>
 
-            <div class="w-full flex flex-row gap-10 w-full">
+            <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
                 class="flex flex-col gap-2 sticky self-start"
                 style="top: 40px"
@@ -384,7 +388,7 @@
               </div>
             </div>
 
-            <div class="w-full flex flex-row gap-10 w-full">
+            <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
                 class="flex flex-col gap-2 sticky self-start"
                 style="top: 40px"
@@ -415,7 +419,7 @@
               </div>
             </div>
 
-            <div class="w-full flex flex-row gap-10 w-full">
+            <div class="w-full flex flex-col sm:flex-row gap-10 w-full">
               <div
                 class="flex flex-col gap-2 sticky self-start"
                 style="top: 40px"
@@ -445,7 +449,7 @@
           </div>
         </div>
 
-        <div class="w-full h-40"></div>
+        <div class="w-full h-20 sm:h-40"></div>
 
         <!-- resume section -->
         <div
@@ -498,11 +502,11 @@
             <div class="w-full flex flex-row gap-4">
               <span class="text-slate-400 font-light min-w-16">2025</span>
               <div class="w-full">
-                <p class="w-full flex flex-row gap-1">
+                <p class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
                   <span class="text-slate-900 font-semibold"
                     >Computational Engineer Consultant</span
                   >
-                  <span class="text-slate-600">(Freelancer)</span>
+                  <span class="text-slate-600 mb-2 sm:mb-0">(Freelancer)</span>
                 </p>
                 <p class="text-slate-600 mb-2">Berlin/Remote (DE)</p>
                 <p class="leading-5 mb-2 font-normal text-slate-900 font-light">
@@ -517,39 +521,47 @@
             <!-- previous -->
 
             <div class="w-full flex flex-col gap-4">
-              <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2024</span>
-                <span class="text-slate-900 font-semibold"
-                  >Computational Engineer</span
-                >
-                <span class="text-slate-600">at ML System S.A.</span>
-              </p>
+              <div class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light min-w-16">2024</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Computational Engineer</span
+                  >
+                  <span class="text-slate-600">at ML System S.A.</span>
+                </div>
+              </div>
 
-              <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2022-24</span>
-                <span class="text-slate-900 font-semibold"
-                  >Manager Digital Services & Products</span
-                >
-                <span class="text-slate-600">at Grenzebach Envelon GmbH</span>
-              </p>
+              <div class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light min-w-16">2022-24</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Manager Digital Services & Products</span
+                  >
+                  <span class="text-slate-600">at Grenzebach Envelon GmbH</span>
+                </div>
+              </div>
 
-              <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2019-22</span>
-                <span class="text-slate-900 font-semibold"
-                  >Digital Innovation Engineer</span
-                >
-                <span class="text-slate-600">at AVANCIS GmbH</span>
-              </p>
+              <div class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light min-w-16">2019-22</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Digital Innovation Engineer</span
+                  >
+                  <span class="text-slate-600">at AVANCIS GmbH</span>
+                </div>
+              </div>
 
-              <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2019</span>
-                <span class="text-slate-900 font-semibold"
-                  >Optimization Specialist</span
-                >
-                <span class="text-slate-600"
-                  >at Teuffel Engineering Consultants</span
-                >
-              </p>
+              <div class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light min-w-16">2019</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Optimization Specialist</span
+                  >
+                  <span class="text-slate-600"
+                    >at Teuffel Engineering Consultants</span
+                  >
+                </div>
+              </div>
             </div>
 
             <!-- education -->
@@ -558,7 +570,7 @@
 
             <div class="w-full flex flex-col gap-4">
               <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2011–16</span>
+                <span class="text-slate-400 font-light min-w-16">2011–16</span>
                 <span class="text-slate-900 font-semibold"
                   >Bachelor of Engineering (BE), Industrial and Product
                   Design</span
@@ -566,7 +578,7 @@
               </p>
 
               <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2017</span>
+                <span class="text-slate-400 font-light min-w-16">2017</span>
                 <span class="text-slate-900 font-semibold"
                   >Master in Parametric Design</span
                 >
@@ -576,38 +588,48 @@
             <!-- other -->
 
             <div class="w-full flex flex-col gap-4">
-              <p class="w-full flex flex-row gap-4 font-normal">
-                <span class="text-slate-400 font-light w-16">2025</span>
-                <span class="text-slate-900 font-semibold"
-                  >Advanced Revit Training
-                </span>
-                <span class="text-slate-600">at WBS Training, Berlin (DE)</span>
-              </p>
-              <p class="w-full flex flex-row gap-4">
-                <span class="text-slate-400 font-light w-16">2019</span>
-                <span class="text-slate-900 font-semibold"
-                  >Daylight Performance and Optimization</span
-                >
-                <span class="text-slate-600"
-                  >at McNeel Europe, Barcelona (ES)</span
-                >
-              </p>
-              <p class="w-full flex flex-row gap-4 font-normal">
-                <span class="text-slate-400 font-light w-16">2017</span>
-                <span class="text-slate-900 font-semibold"
-                  >Mesh Morphologies, Robotic Crafting
-                </span>
-                <span class="text-slate-600"
-                  >at AA Visiting School Aarhus (DK)</span
-                >
-              </p>
-              <p class="w-full flex flex-row gap-4 font-normal">
-                <span class="text-slate-400 font-light w-16">2017</span>
-                <span class="text-slate-900 font-semibold"
-                  >Construction Bionics
-                </span>
-                <span class="text-slate-600">at TU Dresden (DE) </span>
-              </p>
+              <div class="w-full flex flex-row gap-4 font-normal">
+                <span class="text-slate-400 font-light min-w-16">2025</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Advanced Revit Training
+                  </span>
+                  <span class="text-slate-600"
+                    >at WBS Training, Berlin (DE)</span
+                  >
+                </div>
+              </div>
+              <div class="w-full flex flex-row gap-4">
+                <span class="text-slate-400 font-light min-w-16">2019</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Daylight Performance and Optimization</span
+                  >
+                  <span class="text-slate-600"
+                    >at McNeel Europe, Barcelona (ES)</span
+                  >
+                </div>
+              </div>
+              <div class="w-full flex flex-row gap-4 font-normal">
+                <span class="text-slate-400 font-light min-w-16">2017</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Mesh Morphologies, Robotic Crafting
+                  </span>
+                  <span class="text-slate-600"
+                    >at AA Visiting School Aarhus (DK)</span
+                  >
+                </div>
+              </div>
+              <div class="w-full flex flex-row gap-4 font-normal">
+                <span class="text-slate-400 font-light min-w-16">2017</span>
+                <div class="w-full flex flex-col sm:flex-row gap-0 sm:gap-1">
+                  <span class="text-slate-900 font-semibold"
+                    >Construction Bionics
+                  </span>
+                  <span class="text-slate-600">at TU Dresden (DE) </span>
+                </div>
+              </div>
             </div>
 
             <!-- skills -->
@@ -674,7 +696,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full h-40"></div>
+        <div class="w-full h-0 sm:h-40"></div>
 
         <!-- contact section -->
         <div

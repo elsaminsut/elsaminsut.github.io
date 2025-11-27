@@ -337,5 +337,66 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial update
     updateArrowButtons();
+
+    // Touch/swipe functionality for mobile
+    let touchStartX = 0;
+    let touchStartPosition = 0;
+    let isDragging = false;
+    const minSwipeDistance = 50; // Minimum distance for a swipe to be recognized
+
+    workScrollContainer.addEventListener("touchstart", function (e) {
+      touchStartX = e.touches[0].clientX;
+      touchStartPosition = currentPosition;
+      isDragging = true;
+      // Disable transition during drag for smoother feel
+      workScrollWrapper.style.transition = "none";
+    }, { passive: true });
+
+    workScrollContainer.addEventListener("touchmove", function (e) {
+      if (!isDragging) return;
+      
+      const touchCurrentX = e.touches[0].clientX;
+      const diff = touchStartX - touchCurrentX;
+      
+      // Calculate new position with bounds checking
+      const newPosition = touchStartPosition + diff;
+      const boundedPosition = Math.max(0, Math.min(newPosition, maxScroll));
+      
+      // Update current position during drag
+      currentPosition = boundedPosition;
+      
+      // Apply transform in real-time during drag
+      workScrollWrapper.style.transform = `translateX(-${boundedPosition}px)`;
+      
+      // Prevent default scrolling behavior
+      e.preventDefault();
+    }, { passive: false });
+
+    workScrollContainer.addEventListener("touchend", function (e) {
+      if (!isDragging) return;
+      
+      const touchEndX = e.changedTouches[0].clientX;
+      const swipeDistance = touchStartX - touchEndX;
+      
+      // Re-enable transition for smooth snap
+      workScrollWrapper.style.transition = "transform 0.4s ease-in-out";
+      
+      // Determine if it's a swipe or just a drag
+      if (Math.abs(swipeDistance) > minSwipeDistance) {
+        // It's a swipe - scroll in the swipe direction
+        if (swipeDistance > 0) {
+          // Swiped left - scroll right
+          scrollToPosition(currentPosition + scrollAmount);
+        } else {
+          // Swiped right - scroll left
+          scrollToPosition(currentPosition - scrollAmount);
+        }
+      } else {
+        // It's just a drag - snap to current position (which may have changed during drag)
+        scrollToPosition(currentPosition);
+      }
+      
+      isDragging = false;
+    }, { passive: true });
   }
 });
